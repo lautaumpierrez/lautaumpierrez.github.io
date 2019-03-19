@@ -21,14 +21,14 @@ export const store = new Vuex.Store({
       commit('toggleIA');
     },
     addMessage({commit},message){
-      commit('addMessage', {text: message, both: true});
+      commit('addMessage', {text: message, both: false});
       axios.get(url[1], {
         params:{
           text: message,
         }
       }).then((response)=>{
         console.log(response);
-        commit('addMessage', {text: response.data.output.generic[0].text, both: false});
+        commit('addMessage', {text: response.data.output.generic[0].text, both: true});
       });
     }
   },
