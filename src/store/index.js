@@ -22,7 +22,7 @@ export const store = new Vuex.Store({
     },
     addMessage({commit},message){
       commit('addMessage', {text: message, both: true});
-      axios.get(url[0], {
+      axios.get(url[1], {
         params:{
           text: message,
         }
