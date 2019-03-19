@@ -61,3 +61,12 @@ body,html{
     }
   }
 }
+.inputLauti{
+  border: none;
+  width: 100%;
+  padding:  15px 10px 15px 10px;
+  font-size: 18px;
+  &:active, &:focus{
+    outline: 0px !important;
+  }
+}

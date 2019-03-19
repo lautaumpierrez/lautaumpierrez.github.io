@@ -42,13 +42,15 @@
         </div>
       </div>
     </structure>
+    <both></both>
   </div>
 </template>
 
 <script>
   import structure from '../components/structure.vue';
+  import both from '../components/both.vue';
   export default{
-    components:{structure },
+    components:{structure,both},
     data:()=>({
       technologies:[
         {text: "VueJs", color: 'is-warning'},
