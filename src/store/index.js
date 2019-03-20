@@ -22,6 +22,7 @@ export const store = new Vuex.Store({
     },
     addMessage({commit},{message, callback}){
       commit('addMessage', {text: message, both: false});
+      callback();
       axios.get(url[1], {
         params:{
           text: message,
@@ -29,7 +30,6 @@ export const store = new Vuex.Store({
       }).then((response)=>{
         console.log(response);
         commit('addMessage', {text: response.data.output.generic[0].text, both: true});
-        callback();
       });
     }
   },
