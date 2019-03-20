@@ -11,7 +11,15 @@
       </header>
       <section class="messagesBox" id="messagesScroll">
         <div class="message" v-for="(message,index) in iaState.messages" :class="[message.both ? 'both' : 'me']">
-          {{ message.both ? 'IA: \n ' : ''}}{{message.text}}
+          <div v-if="message.imageBin">
+            {{ message.both ? 'IA' : ''}}<div v-html="message.text"/>
+            <br>
+            <img :src="message.image" style="max-width: 150px;" alt="">
+          </div>
+          <div v-else>
+            {{ message.both ? 'IA: \n ' : ''}}
+            {{message.text}}
+          </div>
         </div>
       </section>
       <section class="textBox has-text-centered">

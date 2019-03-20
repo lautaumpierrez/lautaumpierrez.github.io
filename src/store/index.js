@@ -29,7 +29,10 @@ export const store = new Vuex.Store({
         }
       }).then((response)=>{
         console.log(response);
-        commit('addMessage', {text: response.data.output.generic[0].text, both: true});
+        if(response.data.output.generic[0].source)
+          commit('addMessage', {text: response.data.output.generic[0].title,imageBin: true, both: true, image: response.data.output.generic[0].source});
+        else
+          commit('addMessage', {text: response.data.output.generic[0].text,both: true});
       });
     }
   },
