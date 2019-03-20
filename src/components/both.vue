@@ -15,7 +15,7 @@
         </div>
       </section>
       <section class="textBox has-text-centered">
-        <input v-model="message" type="text" placeholder="Ingrese el mensaje" class="inputLauti"  name="" value="">
+        <input @keyup.enter="sendMessage" v-model="message" type="text" placeholder="Ingrese el mensaje" class="inputLauti"  name="" value="">
         <a @click="sendMessage" class="button sendMessage is-outline is-outlined is-white">Enviar</a>
       </section>
     </div>
@@ -36,7 +36,9 @@
         this.$store.dispatch('toggleIA');
       },
       sendMessage(){
-        this.$store.dispatch('addMessage', this.message);
+        this.$store.dispatch('addMessage', {message: this.message, callback:()=>{
+          this.message= '';
+        }});
       }
     }
   }
