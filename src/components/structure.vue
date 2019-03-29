@@ -1,5 +1,5 @@
 <template>
-  <div class="columns is-multiline">
+  <div class="columns is-multiline" style="padding-bottom: 0px !important; margin-bottom: 0px !important;">
     <div class="column is-8 is__fullheight__project lauti__project animated fadeInLeft" :style="{backgroundImage: 'url('+require('../assets/projects/lautiflix.png')+')'}">
       <div class="project__content" @click="goTo('https://lautaumpierrez.github.io/lautiflix')">
         <div class="project__info">
@@ -42,7 +42,7 @@
     <div class="column is-8 is__fullheight__addon">
       <slot name="contenido"></slot>
     </div>
-    <div class="column is-4 is__fullheight__addon is-black-bg__special has-text-white">
+    <div style="padding-bottom: 0px !important; margin-bottom: 0px !important;" class="column is-4 is__fullheight__addon is-black-bg__special has-text-white">
       <slot name="personal-info"></slot>
     </div>
     <div class="column is-12 is-paddingless is-marginless">

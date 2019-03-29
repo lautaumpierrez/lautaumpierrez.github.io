@@ -43,14 +43,16 @@
       </div>
     </structure>
     <both></both>
+    <diplomas></diplomas>
   </div>
 </template>
 
 <script>
   import structure from '../components/structure.vue';
   import both from '../components/both.vue';
+  import diplomas from '../components/diplomas';
   export default{
-    components:{structure,both},
+    components:{structure,both,diplomas},
     data:()=>({
       technologies:[
         {text: "VueJs", color: 'is-warning'},
