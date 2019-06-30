@@ -1,0 +1,30 @@
+@import 'variables';
+
+.MyImageComponent{
+  width: 22vw;
+  height: 22vw;
+  background-color: rgb(230,230,230);
+  border-radius: 30px;
+  margin-left: 6vw;
+  transform: rotate(-2deg);
+  .btn.about-me{
+    background-color: $principal-color;
+    color: #fff;
+    padding: 8px 15px 8px 15px;
+    border: none !important;
+    border-radius: 10px;
+    margin-top: 16vw !important;
+    margin-left: 18vw;
+    width: 100px !important;
+    cursor: pointer;
+    transition-duration: 0.3s;
+
+    &:focus, &:active{
+      outline: none !important;
+    }
+    &:hover{
+      transition-duration: 0.3s;
+      transform: scale(1.1);
+    }
+  }
+}

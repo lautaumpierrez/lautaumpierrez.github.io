@@ -1,0 +1,65 @@
+@import 'variables';
+header.HeaderComponent{
+  padding: 3em;
+  min-height: 100vh;
+  background-color: #fff;
+  overflow: hidden !important;
+  .information{
+    margin-top: 10vw;
+    width: 100%;
+    margin-left: -50px;
+    .columns{
+      .column:nth-of-type(2){
+        .title.is-1{
+          font-weight: 400 !important;
+        }
+        .btn{
+          color: #fff;
+          padding: 8px 15px 8px 15px;
+          border: none !important;
+          border-radius: 10px;
+          width: 100px !important;
+          cursor: pointer;
+          transition-duration: 0.3s;
+
+          &:focus, &:active{
+            outline: none !important;
+          }
+          &:hover{
+            transition-duration: 0.3s;
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+  .shapes{
+    div:nth-of-type(1){
+      width: 40vw;
+      height: 50vw;
+      position: absolute;
+      top: -23vw !important;
+      left: -20vw !important;
+      background-image: linear-gradient(to bottom right, $principal-color,$principal-color,transparentize($principal-color, 0.3));
+      border-radius: 2em;
+      transform: rotate(-30deg);
+      z-index: 2;
+    }
+    div:nth-of-type(2){
+      width: 40vw;
+      height: 50vw;
+      position: absolute;
+      top: -30vw !important;
+      right: -27vw !important;
+      background-image: linear-gradient(to bottom left, $principal-color,$principal-color,transparentize($principal-color, 0.3));
+      border-radius: 2em;
+      transform: rotate(-30deg);
+      z-index: 2;
+    }
+  }
+  .top-layer{
+    position: absolute !important;
+    z-index: 10 !important;
+    width: 100%;
+  }
+}
