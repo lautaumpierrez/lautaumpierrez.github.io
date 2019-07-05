@@ -16,14 +16,38 @@ export default ()=>(
             </center>
           </div>
           <div className="column is-6">
-            <div className="container">
-            <p className="title is-1">Hola, soy Lautaro</p>
-            <p className="subtitle">
-              <b>Fullstack</b> Developer, listo para llevar tus
-              proyectos <br/> al siguiente nivel
-            </p>
-            <button className="btn" style={{marginRight: 20,backgroundColor: '#2ecc71'}}>Whatsapp</button>
-            <button className="btn" style={{backgroundColor: '#e74c3c'}}>Mail</button>
+            <div className="container has-text-centered-touch">
+              <p className="title is-1">Hola, soy Lautaro</p>
+              <p className="subtitle is-marginless">
+                <b>Fullstack</b> Developer, listo para llevar</p>
+              <span className="subtitle">
+                tus proyectos  al siguiente nivel 🚀
+              </span>
+              <br/>
+              <br/>
+              <p className="subtitle">Dejame un mensaje. Charlemos 💬</p>
+              <div className="level is-mobile">
+                <a href="tel:+598098115938" className="btn level-item" style={{marginRight: 20,backgroundColor: '#2ecc71'}}>
+                  <div className="level is-mobile">
+                    <div className="level-item">
+                      <img src={require('../assets/svg/whatsapp.svg')} style={{filter:'invert(100%)',width: 20}} alt=""/>
+                    </div>
+                    <div className="level-item">
+                       &nbsp; Whatsapp
+                    </div>
+                  </div>
+                </a>
+                <a href="mailto: lauta.guillermo@gmail.com" className="btn level-item" style={{backgroundColor: '#e74c3c'}}>
+                  <div className="level is-mobile">
+                    <div className="level-item">
+                      <img src={require('../assets/svg/gmail.svg')} style={{filter:'invert(100%)',width: 20}} alt=""/>
+                    </div>
+                    <div className="level-item">
+                       &nbsp; Mail
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>

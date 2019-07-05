@@ -1,0 +1,54 @@
+.PortfolioComponent{
+  @media screen and (max-width: 1080px){
+    padding: 2em !important;
+  }
+
+  .ContactarComponent{
+    width: 90%;
+    margin-left: 5%;
+    max-height: 250px;
+    border-radius: 40px;
+    background-color: rgb(255,255,255);
+    box-shadow: 3px 3px 5px 5px rgb(240,240,240) !important;
+
+    @media screen and (max-width: 1080px){
+      max-height: none !important;
+      .contenedor{
+        padding: 20px !important;
+      }
+    }
+    .contenedor{
+      padding: 25px 40px 25px 40px;
+      img{
+        width: 80px;
+        height: 80px;
+        transform: rotate(-10deg);
+        border-radius: 20px;
+      }
+      p{
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+      .btn{
+        width: 100%;
+        padding: 7px 10px 7px 10px;
+        background-color: #2ecc71 !important;
+        color: #fff;
+        cursor: pointer;
+        border: none !important;
+        border-radius: 15px;
+        font-size: 16px;
+        transition-duration: 0.3s;
+
+        &:focus, &:active{
+          outline: none !important;
+        }
+        &:hover{
+          transition-duration: 0.3s;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+}

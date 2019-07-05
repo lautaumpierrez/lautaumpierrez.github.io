@@ -1,0 +1,35 @@
+.ProjectCardComponent{
+  width: 90%;
+  margin-left: 5%;
+	height: 250px;
+  border-radius: 40px;
+  background-size: cover !important;
+  background-color: #fff !important;
+
+  .contenedor{
+    position: relative;
+    width: 100%;
+    height: 250px;
+
+    .btn{
+      margin-top: 30px;
+      margin-left: calc(100% - 90px);
+      margin-right: 20px;
+      color: #fff;
+      padding: 5px 20px 5px 20px;
+      border: none !important;
+      border-radius: 10px;
+      min-width: 100px !important;
+      cursor: pointer;
+      transition-duration: 0.3s;
+
+      &:focus, &:active{
+        outline: none !important;
+      }
+      &:hover{
+        transition-duration: 0.3s;
+        transform: scale(1.1);
+      }
+    }
+  }
+}

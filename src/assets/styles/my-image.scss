@@ -3,17 +3,29 @@
 .MyImageComponent{
   width: 22vw;
   height: 22vw;
-  background-color: rgb(230,230,230);
+  background-size: cover !important;
+  background-position: center !important;
   border-radius: 30px;
   margin-left: 6vw;
+  
+  @media screen and (max-width: 1080px){
+    width: 50vw;
+    height: 50vw;
+    margin-left: 0px !important;
+    transform: rotate(0deg) !important;
+    .btn.about-me{
+      margin-top: 30vw !important;
+      margin-left: 35vw !important;
+    }
+  }
   transform: rotate(-2deg);
   .btn.about-me{
-    background-color: $principal-color;
+    background-image: linear-gradient(to bottom right, $principal-color,$principal-color,transparentize($principal-color, 0.3));
     color: #fff;
     padding: 8px 15px 8px 15px;
     border: none !important;
     border-radius: 10px;
-    margin-top: 16vw !important;
+    margin-top: 16vw;
     margin-left: 18vw;
     width: 100px !important;
     cursor: pointer;

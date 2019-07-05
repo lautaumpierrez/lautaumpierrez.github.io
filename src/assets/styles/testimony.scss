@@ -1,0 +1,25 @@
+.testimonyComponent{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 30px;
+  background-color: #fff;
+  box-shadow: 3px 3px 5px 5px rgb(235,235,235);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  @media screen and (max-width: 1080px){
+    padding-bottom: 20px;
+  }
+  .contenedor{
+    padding: 15px;
+    img.person-avatar{
+      border-radius: 50%;
+      width: 80px;
+    }
+    .text-content{
+      padding-top: 12px;
+    }
+    .person-name{
+      font-style: italic;
+    }
+  }
+}

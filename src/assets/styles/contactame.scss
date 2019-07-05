@@ -1,0 +1,96 @@
+.ContactameSectionComponent{
+  margin-bottom: 30px;
+  @media screen and (max-width: 1080px){
+    width: 95%;
+    margin-left: 2.5%;
+  }
+  .btn{
+    width: 100%;
+    padding: 7px 15px 7px 15px !important;
+    height: 50px;
+    color: #fff;
+    cursor: pointer;
+    border: none !important;
+    border-radius: 15px;
+    font-size: 16px;
+    transition-duration: 0.3s;
+
+    &:focus, &:active{
+      outline: none !important;
+    }
+    &:hover{
+      transition-duration: 0.3s;
+      transform: scale(1.05);
+    }
+  }
+  .father-to-center{
+    display: table !important;
+    height: 300px;
+    width: 100%;
+    .child-to-center{
+      width: 100%;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+  .contenedor{
+    position: relative !important;
+    .box{
+      border-radius: 40px;
+      min-height: 320px;
+      max-height: 320px;
+      display: inline-block;
+      background-color: #fff;
+      box-shadow: 3px 3px 5px 5px rgba(0,0,0,.1) !important;
+
+      @media screen and (max-width: 1080px){
+        max-height: none;
+        width: 100% !important;
+
+      }
+    }
+    .box:nth-of-type(1){
+      width: 85%;
+      .column{
+        padding-top: 0px !important;
+
+      }
+      .column:nth-of-type(1){
+        padding-right:  3em;
+        padding-left:  3em;
+        img{
+          width: 50px;
+          transform: rotate(-10deg);
+        }
+      }
+    }
+
+    .box:nth-of-type(2){
+      width: 10%;
+      margin-bottom: 20px;
+      float: right;
+      .social-network{
+        width: 100%;
+        height: calc(calc(300px - 20px) / 3);
+        padding: 22px 10px 10px 10px;
+      }
+      @media screen and (max-width: 1080px){
+          height: 100px !important;
+          max-height: 100px !important;
+          min-height: 100px;
+          .social-network{
+            height: 50px !important;
+            padding-top: 0px !important;
+            width: calc(100% / 3) !important;
+            padding: 0px !important ;
+            display: inline-block !important;
+            img{
+              margin-top: -5px;
+              width: 70px !important;
+            }
+          }
+
+      }
+    }
+  }
+}

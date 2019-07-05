@@ -1,0 +1,42 @@
+
+.SkillsComponent{
+
+  @media screen and (max-width: 1080px){
+    background-color: #fff !important;
+
+    padding: 2em;
+  }
+  @media screen and (max-height: 680px){
+    margin-top: 5em;
+  }
+  .columns{
+    .column{
+      img{
+        width: 100%;
+
+      }
+      @media screen and (max-width: 1080px){
+        margin-top: 10px;
+        box-shadow: 3px 3px 5px 5px rgb(240,240,240);
+        padding: 20px;
+        .contenedor{
+          width: 50% !important;
+          margin-left: 25%;
+          margin-top: .5em !important;
+        }
+
+
+      }
+    }
+    // para numeros impares.
+    // .column:nth-child(odd) {
+    //   background-color:#f2f2f2;
+    // }
+    .column:nth-child(even){
+      .contenedor{
+        margin-top: 100px;
+
+      }
+    }
+  }
+}

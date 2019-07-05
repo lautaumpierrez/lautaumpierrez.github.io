@@ -2,14 +2,23 @@
 header.HeaderComponent{
   padding: 3em;
   min-height: 100vh;
-  background-color: #fff;
+  background-color: transparent;
   overflow: hidden !important;
   .information{
     margin-top: 10vw;
     width: 100%;
     margin-left: -50px;
+
     .columns{
       .column:nth-of-type(2){
+        .container{
+          width: 400px !important;
+          margin-left: -20px;
+          @media screen and (max-width: 1080px){
+            width: 100% !important;
+            margin-left: 0px !important;
+          }
+        }
         .title.is-1{
           font-weight: 400 !important;
         }
@@ -18,10 +27,9 @@ header.HeaderComponent{
           padding: 8px 15px 8px 15px;
           border: none !important;
           border-radius: 10px;
-          width: 100px !important;
           cursor: pointer;
           transition-duration: 0.3s;
-
+          width: 50% !important;
           &:focus, &:active{
             outline: none !important;
           }
@@ -30,6 +38,10 @@ header.HeaderComponent{
             transform: scale(1.1);
           }
         }
+        @media screen and (max-width: 1080px){
+          padding: 3em
+        }
+
       }
     }
   }
