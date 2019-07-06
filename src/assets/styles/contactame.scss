@@ -12,7 +12,7 @@
     cursor: pointer;
     border: none !important;
     border-radius: 15px;
-    font-size: 16px;
+    font-size: 19px;
     transition-duration: 0.3s;
 
     &:focus, &:active{
@@ -26,6 +26,9 @@
   .father-to-center{
     display: table !important;
     height: 300px;
+    @media screen and (max-width: 1080px){
+      height: 170px !important;
+    }
     width: 100%;
     .child-to-center{
       width: 100%;
@@ -42,18 +45,18 @@
       display: inline-block;
       background-color: #fff;
       box-shadow: 3px 3px 5px 5px rgba(0,0,0,.1) !important;
-
       @media screen and (max-width: 1080px){
         max-height: none;
         width: 100% !important;
-
       }
     }
     .box:nth-of-type(1){
       width: 85%;
+      @media screen and (max-width: 1080px){
+        padding-top: 3em !important;
+      }
       .column{
         padding-top: 0px !important;
-
       }
       .column:nth-of-type(1){
         padding-right:  3em;

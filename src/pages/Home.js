@@ -13,11 +13,19 @@ export default class HomePage extends React.Component {
         <div className="container">
           <Skills></Skills>
           <div style={{margin: '4em 0em 4em 0em'}}>
-            <Testimony name="Sandra Uiloa" content="Mi experiencia trabajando con Lautaro fue increible. Su manejo efectivo de ReactJS y NodeJS permitio que nuestro proyecto sea lanzado tal y como esperabamos." image="https://www.w3schools.com/w3images/avatar2.png"></Testimony>
+            <Testimony name="Samuel García" content={`
+               Lautaro, además de siempre estar activo,
+                constamente presentaba ideas buenísimas y
+                 estaba dispuesto a colaborar en lo que sea necesario.
+            `} image={require('../assets/png/testimonio1.jpeg')}></Testimony>
           </div>
           <Portfolio></Portfolio>
           <div style={{margin: '4em 0em 4em 0em'}}>
-            <Testimony name="Sandra Uiloa" content="Mi experiencia trabajando con Lautaro fue increíble. Su manejo efectivo de ReactJS y NodeJS permitio que nuestro proyecto sea lanzado tal y como esperábamos." image="https://www.w3schools.com/w3images/avatar2.png"></Testimony>
+            <Testimony classCss="testimony-2" name="Aarón González" content={
+                `El dominio que Lautaro tiene sobre su stack de
+                 tecnologías le permite aportar con ideas y procedimientos aún más efectivos de los que se habían planificado.
+                 Sus aportes y labor va más allá de un Dev y eso se valora mucho.`
+              } image={require('../assets/png/testimonio2.png')}></Testimony>
           </div>
           <Contactame></Contactame>
         </div>

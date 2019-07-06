@@ -63,18 +63,18 @@ export default ()=>(
       <div className="box">
         <center>
           <div className="social-network">
-            <a href="https://github.com/lautaumpierrez">
-              <img src={require('../assets/svg/github-logo.svg')} alt=""/>
+            <a href="https://github.com/lautaumpierrez" target="_blank">
+              <img src={require('../assets/svg/github-logo.svg')} alt="Github [lautaumpierrez]"/>
             </a>
           </div>
           <div className="social-network">
             <a href="https://instagram.com/lautaumpierrez" target="_blank">
-              <img src={require('../assets/svg/instagram.svg')} alt=""/>
+              <img src={require('../assets/svg/instagram.svg')} alt="Instagram [lautaumpierrez]"/>
             </a>
           </div>
           <div className="social-network">
             <a href="https://twitter.com/lautaumpierrez" target="_blank">
-              <img src={require('../assets/svg/twitter.svg')} alt=""/>
+              <img src={require('../assets/svg/twitter.svg')} alt="Twitter [lautaumpierrez]"/>
             </a>
           </div>
         </center>

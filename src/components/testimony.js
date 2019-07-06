@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../assets/styles/testimony.scss';
-const Testimony = ({name, image, content})=>(
-  <div className="testimonyComponent">
+const Testimony = ({name, image, content,classCss})=>(
+  <div className={`testimonyComponent ${classCss}`}>
     <div className="contenedor">
       <div className="columns">
         <div className="column is-2">
@@ -24,7 +24,11 @@ const Testimony = ({name, image, content})=>(
 Testimony.propTypes={
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired
+  content: PropTypes.string.isRequired,
+  classCss: PropTypes.string
+};
+Testimony.defaultProps={
+  classCss: ''
 }
 
 export default Testimony;
