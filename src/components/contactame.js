@@ -30,7 +30,7 @@ export default ()=>(
           <div className="column is-6">
             <div className="father-to-center">
               <div className="child-to-center">
-                <a href="tel:+598098115938">
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=598098115938&text=Hola%21%20Quisiera%20contactarme%20con%20Lautaro%20Umpierrez">
                   <button className="btn level-item" style={{backgroundColor: '#2ecc71'}}>
                     <div className="level is-mobile">
                       <div className="level-item">
